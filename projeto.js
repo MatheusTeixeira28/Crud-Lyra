@@ -6,29 +6,29 @@ const Users = database.define('user', {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER(.100)
-      },
+        type: Sequelize.INTEGER
+    },
 
-      fullname: {
+    fullname: {
         allowNull: false,
         type: Sequelize.STRING
-      },
+    },
 
-      email:{
+    email:{
         allowNull: false,
         unique: true,
         type: Sequelize.STRING
-      },
+    },
 
-      phone:{ 
+    phone:{ 
         allowNull: false,
         type: Sequelize.STRING
-      },
+    },
 
-      UF:{
+    UF:{
         allowNull: false,
         type: Sequelize.STRING
-      }
+    }
 
     
 })
